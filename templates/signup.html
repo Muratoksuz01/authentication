@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+
+    <form method="POST">
+        {%csrf_token%}
+        <label for="">Username</label>
+        <input type="text" id="username" name="username" Required >
+
+        <label for="">First Name</label>
+        <input type="text" id="fname" name="fname"  Required>
+
+        <label for="">Last Name</label>
+        <input type="text" id="lname" name="lname"  Required>
+
+        <label for="">Email Address</label>
+        <input type="text" id="email" name="email" Required >
+
+        <label for="">Password</label>
+        <input type="password" id="pass1" name="pass1"  Required>
+
+        <label for=""> Confirm your password</label>
+        <input type="password" id="pass2" name="pass2"  Required>
+
+        <button type="submit">Kayıt Ol</button>
+        </form>
+</body>
+</html>
